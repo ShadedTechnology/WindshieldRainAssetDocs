@@ -7,8 +7,8 @@
 
 
 <div class="page-nav">
-  <a href="#/RainManager" class="prev">
-    <div class="title">Rain Manager</div>
+  <a href="#/RainController" class="prev">
+    <div class="title">Rain Controller</div>
     <div class="subtitle">⬅ Previous Page</div>
   </a>
   <a href="#/Troubleshooting" class="next">

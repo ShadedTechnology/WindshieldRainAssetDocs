@@ -3,8 +3,7 @@
 ### About
 > This is a tool that will help you create realistic rain effects for car windshield. It can simulate raindrops physics and rain-wipers interaction.
 
-
-![RainDemo](_media/RainShowGif.gif)
+<img width="100%" alt="RainDemo" src="_media/RainShowGif.gif">
 
 <p style="text-align: center;"> <a href="#/OpenDemoScene" style="text-decoration: none;"
 onmouseover="this.getElementsByTagName('span')[0].style.backgroundColor='#2196f3aa';"

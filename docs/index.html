@@ -98,7 +98,13 @@
           docsify_github_icon: 'url(_media/GitHub_Icon.png)',
         }
       },
-      enableSidebarCollapse: true,
+      plugins: [
+        function (hook) {
+          hook.doneEach(function () {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+          });
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->
@@ -108,12 +114,6 @@
 <!-- darklight theme -->
 <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme/dist/index.min.js"></script>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme/dist/style.min.css" />
-
-<!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
-<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
-
-<script src="https://cdn.jsdelivr.net/npm/@lx0f/docsify-sidebar-collapse@2.0.24/dist/index.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@lx0f/docsify-sidebar-collapse@2.0.24/dist/index.css" />
 
 <style>
   /* Force cover background back */

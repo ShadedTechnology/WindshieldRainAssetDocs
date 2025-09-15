@@ -1,4 +1,4 @@
-# Rain Manager
+# Rain Controller
 
 
 <div class="page-nav">
