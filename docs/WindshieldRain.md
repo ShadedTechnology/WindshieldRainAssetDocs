@@ -15,6 +15,9 @@ At the top of the **WindshieldRain** component you should see info box to add [D
 > <img src="_media/windshield_rain_component/add_droplets_acceleration.png" alt="Add DropletsAcceleration" width="800" /><br/>
 > Add [DropletsAcceleration](/DropletsAcceleration) component to your gameObject
 
+> [!WARNING]
+> When changing any value in the **WindshieldRain** component by script remember to call the `UpdateShaderValues()` method to apply changed parameters to the shaders!
+
 ## Windshield Plane
 In this first section you can configure properties of your windshield plane. It is rectangle where your drops will be simulated and projected onto your mesh. For the rain texture to be properely projected onto your windshield mesh you need to adjust the windshield plane rectangle to fit your mesh and then recalculate mesh UVs as shown on the [Prepare Car](/PrepareCar) page.
 You can set here following parameters:

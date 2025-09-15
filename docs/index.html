@@ -98,6 +98,12 @@
           docsify_github_icon: 'url(_media/GitHub_Icon.png)',
         }
       },
+      'flexible-alerts': {
+        style: 'callout',
+        warning: {
+          label: 'Attention'
+        }
+      },
       plugins: [
         function (hook) {
           hook.doneEach(function () {
@@ -115,6 +121,8 @@
 <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme/dist/index.min.js"></script>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme/dist/style.min.css" />
 
+<script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+
 <style>
   /* Force cover background back */
   section.cover.show {
@@ -123,6 +131,9 @@
   section.cover.has-mask .mask {
     background-color: var(--cover_mask_color) !important;
     opacity: 0.5;
+  }
+  .alert.callout.warning {
+      background-color: #f0ad4e36 !important;
   }
 </style>
   </style>
