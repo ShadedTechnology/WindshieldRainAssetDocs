@@ -1,7 +1,9 @@
 # Rain Material
-For your windshield rain to work properely, create material with the `WindshieldRainAsset/WindshieldRainShader` shader. Then assign it to your windshield **MeshRenderer**, `Rain Material` in [WindshieldRain](/WindshieldRain) component and `Material` in [Wipers](/Wipers) component. You can adjust material properties to your likings. Each parameter is described below.
+For your windshield rain to work properely, create material with the `WindshieldRainAsset/<YourPipeline>/WindshieldRainShader` shader. Then assign it to your windshield **MeshRenderer**, `Rain Material` in [WindshieldRain](/WindshieldRain) component and `Material` in [Wipers](/Wipers) component. You can adjust material properties to your likings. Each parameter is described below.
 
-<img src="_media/rain_material/material_header.png" alt="Rain Material Header" width="800" /><br/>
+<img src="_media/rain_material/material_header_builtin.png" alt="Rain Material Header - Built-in Pipeline" width="800" /><br/>
+<img src="_media/rain_material/material_header_urp.png" alt="Rain Material Header - URP Pipeline" width="800" /><br/>
+<img src="_media/rain_material/material_header_hdrp.png" alt="Rain Material Header - HDRP Pipeline" width="800" /><br/>
 
 ## Assigned By Script
 This parameters are assigned by the [WindshieldRain](/WindshieldRain) and [Wipers](/Wipers) scripts. It is recomended to not set them manually.
@@ -11,7 +13,7 @@ This parameters are assigned by the [WindshieldRain](/WindshieldRain) and [Wiper
 <img src="_media/rain_material/assigned_by_script.png" alt="Assigned By Script" width="800" /><br/>
 
 ## Surface Settings
-- `Cull Mode` - surface culling mode, possible options are `Front`, `Back` and `Off`.
+- `Cull Mode` - surface culling mode, possible options are `Front`, `Back` and `Off`. In the URP and HDRP pipeline this setting is in the `Surface Options` panel.
 - `Color Texture` - optional texture to add some color to your windshield like dirt or some stickers.
 - `Color Texture Color Multiplier` - multiplies `Color Texture` by the color value. You can controll also alpha value of the texture this way.
 - `Color Texture Scale & Offset` - `x` and `y` values controll texture scale, `y` and `z` texture offset.
@@ -71,8 +73,8 @@ This controlls appearance of the wipers smudges.
     <div class="title">Wipers</div>
     <div class="subtitle">⬅ Previous Page</div>
   </a>
-  <a href="#/RainPostProcess" class="next">
-    <div class="title">Rain Post Process Profile</div>
+  <a href="#/WindshieldMeshRenderer" class="next">
+    <div class="title">Windshield Mesh Renderer</div>
     <div class="subtitle">Next Page ➡</div>
   </a>
 </div>

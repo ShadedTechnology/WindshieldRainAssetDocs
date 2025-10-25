@@ -12,10 +12,17 @@ Next add the [WindshieldRain](/WindshieldRain) component to it.
 > <img src="_media/windshield_rain_empty_no_command_buffer.png" alt="Windshield Rain Component" width="800" /><br/>
 > Add [WindshieldRain](/WindshieldRain) component to your empty GameObject
 
-At the top of the component you should see warning to add [CommandBufferBlur](/CommandBufferBlur) to your main camera. Click `Add CommandBufferBlur to main camera` button for the warning to disappear and for blur texture to work properely for your windshield shader.
+At the top of the component you should see warning. It is here to make sure your windshield blur and [WindshieldMeshRenderers](/WindshieldMeshRenderer) work correctly. They will vary depending on the render pipeline you are using:
+ - Built-in - warning to add [CommandBufferBlur](/RenderingWindshieldAndBlur#built-in-command-buffer-blur) to your main camera.  Click `Add CommandBufferBlur to main camera` button for the warning to disappear.
+  <img src="_media/windshield_rain_component/add_command_buffer.png" alt="Add CommandBufferBlur" width="800" /><br/>
+ - URP - warning to add [Windshield Render Features](/RenderingWindshieldAndBlur#urp-renderer-features). Click `Add Render Features` button for the warning to disappear.
+  <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
+ - HDRP - warning to add [CustomPassVolume](/RenderingWindshieldAndBlur#hdrp-custom-pass-volume) with Windshield Passes. Click `Add Render Features` button for the warning to disappear.
+  <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
 
-> <img src="_media/windshield_rain_component/add_command_buffer.png" alt="Add CommandBufferBlur" width="800" /><br/>
-> Add [CommandBufferBlur](/CommandBufferBlur) component to your main camera for the blur texture to work
+If you are using URP or HDRP pipeline you can also see warning to use [WindshieldMeshRenderer](/WindshieldMeshRenderer) instead of **MeshRenderer** compoenents on your car windows.
+> <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
+> Replace all your **MeshRenderer** components on your car windows with the [WindshieldMeshRenderer](/WindshieldMeshRenderer) component.
 
 You should see a rectangle on the scene view. If you don't see it make sure to enable Gizmos in the scene view. Now adjust the rectangle to fit the windshield as close as you can. You can use gizmos handles or `Width` and `Height` parameters under the `Windshield Plane Settings` in the [WindshieldRain](/WindshieldRain) component. It should look something like this.
 

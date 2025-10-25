@@ -9,6 +9,7 @@
     - [Droplets Acceleration](DropletsAcceleration.md)
     - [Wipers](Wipers.md)
     - [Rain Material](RainMaterial.md)
+    - [Windshield Mesh Renderer](WindshieldMeshRenderer.md)
     - [Rain Post Process Profile](RainPostProcess.md)
 
 - Side Rain
@@ -17,5 +18,5 @@
 
 - Additional
     - [Rain Controller](RainController.md)
-    - [Command Buffer Blur](CommandBufferBlur.md)
+    - [Rendering Windshield And Blur](RenderingWindshieldAndBlur.md)
     - [Troubleshooting](Troubleshooting.md)

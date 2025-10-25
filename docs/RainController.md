@@ -25,8 +25,8 @@ This is a simple script that coordinates all rain components and makes it easy t
     <div class="title">Simple Rain Material</div>
     <div class="subtitle">⬅ Previous Page</div>
   </a>
-  <a href="#/CommandBufferBlur" class="next">
-    <div class="title">Command Buffer Blur</div>
+  <a href="#/RenderingWindshieldAndBlur" class="next">
+    <div class="title">Rendering Windshield And Blur</div>
     <div class="subtitle">Next Page ➡</div>
   </a>
 </div>

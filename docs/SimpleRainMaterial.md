@@ -3,14 +3,16 @@ This is shader that is simpler than this in the [Windshield Rain](/WindshieldRai
 It uses triplanar shading with a simple rain effect. To make it look like rain is reacting to the car acceleration, we create 4 layers of rain and each layer plays rain animation in the direction opposite to the car acceleration in the constant time intervals. I created two variants of this shader for [glass like objects](#glass-material) and for [opaque objects](#standard-material).
 
 ## Glass Material
-This shader you can find in shader path `WindshieldRainAsset/SimpleRainGlass`. It imitates rain on glass material.
+This shader you can find in shader path `WindshieldRainAsset/<YourPipeline>/SimpleRainGlass`. It imitates rain on glass material.
 
-<img src="_media/simple_rain_material/glass_header.png" alt="Glass Material Header" width="800" /><br/>
+<img src="_media/simple_rain_material/glass_header_builtin.png" alt="Glass Material Header" width="800" /><br/>
+<img src="_media/simple_rain_material/glass_header_urp.png" alt="Glass Material Header" width="800" /><br/>
+<img src="_media/simple_rain_material/glass_header_hdrp.png" alt="Glass Material Header" width="800" /><br/>
 
 It has following parameters you can tweak:
 
 ### Surface Settings
-- `Cull Mode` - culling mode, you can choose one of this options: `Front`, `Back` and `Off`.
+- `Cull Mode` - culling mode, you can choose one of this options: `Front`, `Back` and `Off`. In the URP and HDRP pipeline this setting is in the `Surface Options` panel.
 - `Rain Tiling` - scale of rain drops
 - `Rain Distortion` - strength of how much rain normals will distort the image.
 - `Metallic` - surface metallic strength.
@@ -67,12 +69,14 @@ It has following parameters you can tweak:
 
 
 ## Standard Material
-This shader you can find in shader path `WindshieldRainAsset/SimpleRainStandard`. It imitates rain on opaque material.
+This shader you can find in shader path `WindshieldRainAsset/<YourPipeline>/SimpleRainStandard`. It imitates rain on opaque material.
 
-<img src="_media/simple_rain_material/standard_header.png" alt="Standard Material Header" width="800" /><br/>
+<img src="_media/simple_rain_material/standard_header_builtin.png" alt="Standard Material Header" width="800" /><br/>
+<img src="_media/simple_rain_material/standard_header_urp.png" alt="Standard Material Header" width="800" /><br/>
+<img src="_media/simple_rain_material/standard_header_hdrp.png" alt="Standard Material Header" width="800" /><br/>
 
 ### Surface Settings
-- `Cull Mode` - culling mode, you can choose one of this options: `Front`, `Back` and `Off`.
+- `Cull Mode` - culling mode, you can choose one of this options: `Front`, `Back` and `Off`. In the URP and HDRP pipeline this setting is in the `Surface Options` panel.
 - `Main Texture` - main texture of the surface.
 - `Color` - color of the surface (`Main Texture` color is multiplied by this value).
 - `Rain Tiling` - scale of rain drops

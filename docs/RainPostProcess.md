@@ -55,8 +55,8 @@ It has following parameters:
 <img src="_media/rain_post_process/vornoi.png" alt="Mask" width="800" /><br/>
 
 <div class="page-nav">
-  <a href="#/RainMaterial" class="prev">
-    <div class="title">Rain Material</div>
+  <a href="#/WindshieldMeshRenderer" class="prev">
+    <div class="title">Windshield Mesh Renderer</div>
     <div class="subtitle">⬅ Previous Page</div>
   </a>
   <a href="#/SimpleRainManager" class="next">
