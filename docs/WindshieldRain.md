@@ -10,11 +10,11 @@ At the top of the component you can see warning. It is here to make sure your wi
   <img src="_media/windshield_rain_component/add_command_buffer.png" alt="Add CommandBufferBlur" width="800" /><br/>
  - URP - warning to add [Windshield Render Features](/RenderingWindshieldAndBlur#urp-renderer-features). Click `Add Render Features` button for the warning to disappear.
   <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
- - HDRP - warning to add [CustomPassVolume](/RenderingWindshieldAndBlur#hdrp-custom-pass-volume) with Windshield Passes. Click `Add Render Features` button for the warning to disappear.
-  <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
+ - HDRP - warning to add [CustomPassVolume](/RenderingWindshieldAndBlur#hdrp-custom-pass-volume) with Windshield Passes. Click `Add Passes` button for the warning to disappear.
+  <img src="_media/windshield_rain_component/add_passes_hdrp.png" alt="Add Passes" width="800" /><br/>
 
 If you are using URP or HDRP pipeline you can also see warning to use [WindshieldMeshRenderer](/WindshieldMeshRenderer) instead of **MeshRenderer** compoenents on your car windows.
-> <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
+> <img src="_media/windshield_rain_component/add_mesh_renderer.png" alt="Add Mesh Renderers" width="800" /><br/>
 > Replace all your **MeshRenderer** components on your car windows with the [WindshieldMeshRenderer](/WindshieldMeshRenderer) component.
 
 At the top of the **WindshieldRain** component you should see info box to add [DropletsAcceleration](/DropletsAcceleration) component to make your trops react to car acceleration and gravity. When you click `Add DropletsAcceleration component` button the component will be added automatically to your gameObject. You can read more about this component [here](/DropletsAcceleration).

@@ -17,11 +17,11 @@ At the top of the component you should see warning. It is here to make sure your
   <img src="_media/windshield_rain_component/add_command_buffer.png" alt="Add CommandBufferBlur" width="800" /><br/>
  - URP - warning to add [Windshield Render Features](/RenderingWindshieldAndBlur#urp-renderer-features). Click `Add Render Features` button for the warning to disappear.
   <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
- - HDRP - warning to add [CustomPassVolume](/RenderingWindshieldAndBlur#hdrp-custom-pass-volume) with Windshield Passes. Click `Add Render Features` button for the warning to disappear.
-  <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
+ - HDRP - warning to add [CustomPassVolume](/RenderingWindshieldAndBlur#hdrp-custom-pass-volume) with Windshield Passes. Click `Add Passes` button for the warning to disappear.
+  <img src="_media/windshield_rain_component/add_passes_hdrp.png" alt="Add Passes" width="800" /><br/>
 
 If you are using URP or HDRP pipeline you can also see warning to use [WindshieldMeshRenderer](/WindshieldMeshRenderer) instead of **MeshRenderer** compoenents on your car windows.
-> <img src="_media/windshield_rain_component/add_features_urp.png" alt="Add Render Features" width="800" /><br/>
+> <img src="_media/windshield_rain_component/add_mesh_renderer.png" alt="Add Mesh Renderers" width="800" /><br/>
 > Replace all your **MeshRenderer** components on your car windows with the [WindshieldMeshRenderer](/WindshieldMeshRenderer) component.
 
 You should see a rectangle on the scene view. If you don't see it make sure to enable Gizmos in the scene view. Now adjust the rectangle to fit the windshield as close as you can. You can use gizmos handles or `Width` and `Height` parameters under the `Windshield Plane Settings` in the [WindshieldRain](/WindshieldRain) component. It should look something like this.
